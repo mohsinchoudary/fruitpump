@@ -1,0 +1,78 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    padding: 20px;
+}
+
+.logo {
+    width: 220px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Headings */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #ff4757;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff6b81;
+}
+
+/* Token Box Section */
+.token-box {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #161b22;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.token-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.token-box li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
