@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruitpump (APB)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="container fade-in">
+
+    <img src="logo.png" class="hero-logo" alt="Fruitpump Logo">
+
+    <h1>Fruitpump (APB)</h1>
+    <p class="subtitle">The Angry Apple of Solana 🍎</p>
+
+    <div class="button-row">
+      <a href="buy.html" class="btn red">🚀 Buy Now</a>
+      <a href="whitepaper.html" class="btn white">📄 Whitepaper</a>
+    </div>
+
+    <section class="card">
+      <h2>Token Details</h2>
+      <ul>
+        <li><b>Total Supply:</b> 1,000,000,000</li>
+        <li><b>Symbol:</b> APB</li>
+        <li><b>Network:</b> Solana</li>
+        <li><b>Mint Address:</b> <span id="mint">69SUtPdyF9Kg…kGpump</span> 
+          <button onclick="copyMint()" class="copy">Copy</button>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2025 Fruitpump | The Angry Apple of Solana 🍎
+    </footer>
+  </div>
+
+<script>
+function copyMint() {
+  navigator.clipboard.writeText("69SUtPdyF9Kgomqfxki9tosBV2gmDggTG3D8vkGpump");
+  alert("Mint address copied!");
+}
+</script>
+
+</body>
+</html>
