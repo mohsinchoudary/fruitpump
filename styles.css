@@ -1,0 +1,91 @@
+/* ==== GLOBAL PAGE ANIMATION ==== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #0b0f19, #161d2f, #1a243a, #111827);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ==== CENTERED CONTAINER ==== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==== LOGO ==== */
+.logo {
+    width: 180px;
+    margin-top: 20px;
+    filter: drop-shadow(0px 0px 15px rgba(255,0,0,0.4));
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ==== HEADERS ==== */
+h1 {
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+p {
+    font-size: 18px;
+}
+
+/* ==== BUY BUTTON ==== */
+.btn {
+    display: inline-block;
+    background: #ff2b2b;
+    padding: 14px 28px;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.6);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(255,0,0,0.9);
+}
+
+/* ==== TOKEN DETAIL BOX ==== */
+.token-box {
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    text-align: left;
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==== FOOTER ==== */
+footer {
+    margin-top: 40px;
+    color: #ccc;
+    font-size: 14px;
+}
