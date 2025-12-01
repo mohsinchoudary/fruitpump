@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fruitpump (APB)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="logo.png" alt="Fruitpump logo" class="logo" />
+      <h1>Fruitpump (APB)</h1>
+      <p class="tagline">The Angry Apple of Solana <span class="apple">🍎</span></p>
+
+      <div class="actions">
+        <a class="btn primary" href="buy.html">🚀 Buy Now</a>
+        <a class="btn outline" href="whitepaper.html">📄 Whitepaper</a>
+      </div>
+    </header>
+
+    <section class="card token">
+      <h2>Token Details</h2>
+      <ul>
+        <li><strong>Total Supply:</strong> 1,000,000,000</li>
+        <li><strong>Symbol:</strong> APB</li>
+        <li><strong>Network:</strong> Solana</li>
+        <li>
+          <strong>Mint Address:</strong>
+          <div class="mint-row">
+            <code id="mint" class="mint">69SUtPdyF9Kgomqfxki9tosBV2gmDggTG3D8vkGpump</code>
+            <button id="copyBtn" class="copy">Copy</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Fruitpump | The Angry Apple of Solana <span class="apple">🍎</span></p>
+    </footer>
+  </main>
+
+  <script>
+    // copy button
+    const copyBtn = document.getElementById('copyBtn');
+    const mintEl = document.getElementById('mint');
+    copyBtn?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(mintEl.textContent.trim());
+        copyBtn.textContent = 'Copied ✓';
+        setTimeout(()=> copyBtn.textContent = 'Copy',1500);
+      } catch(e) {
+        copyBtn.textContent = 'Copy';
+        alert('Copy failed — please select and copy the address');
+      }
+    });
+  </script>
+</body>
+</html>
