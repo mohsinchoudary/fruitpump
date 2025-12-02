@@ -1,0 +1,29 @@
+{
+  "name": "Fruitpump",
+  "symbol": "APB",
+  "description": "Fruitpump (APB) — The Angry Apple of Solana.",
+  "seller_fee_basis_points": 0,
+  "image": "ipfs://bafkreicy5cmxxseutbi5epn44syaiv7zkmjkkl3t4xl3m53iusocj4mayq",
+  "external_url": "https://fruitpump.fun",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Meme Token"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "ipfs://bafkreicy5cmxxseutbi5epn44syaiv7zkmjkkl3t4xl3m53iusocj4mayq",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "69SUtPdyFY9Kgomqfxki9tosBV2gmDggTG3D8vkGpump",
+        "share": 100
+      }
+    ]
+  }
+}
